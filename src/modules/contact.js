@@ -4,26 +4,24 @@ const createContact = function() {
 
     //add title
     var title = document.createElement('h2');
-    title.textContent = 'Contact Us'
-    contact.append(title)
-
+    title.textContent = 'Contact Us';
+    
     //add address
     var address = document.createElement('div');
     address.classList.add('contact-info');
     address.textContent = '888 Sunset Blvd. Los Angeles, Ca 91326';
-    contact.append(address);
 
     //add phone num
     var phone = document.createElement('div');
     phone.classList.add('contact-info');
     phone.textContent = '(818)777-8888';
-    contact.append(phone);
 
     //add email
     var email = document.createElement('div');
     email.classList.add('contact-info');
     email.textContent = 'contact@neeksrice.com';
-    contact.append(email);
+
+    contact.append(title, address, phone, email)
 
     return contact
 }

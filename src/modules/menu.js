@@ -1,24 +1,32 @@
 const createMenu = function() {
     var menuData = [{
-        item: 'thai rice',
-        price: '11',
+        item: 'thai fried rice',
+        price: '12',
     }, 
     {
-        item: 'korean rice',
+        item: 'korean fried rice',
         price: '11'
     }, 
     {
-        item: 'japanese rice',
+        item: 'chinese fried rice',
+        price: '12'
+    }, 
+    {
+        item: 'japanese fried rice',
         price: '11'
     },
     {
-        item: 'filipino rice',
-        price: '11'
+        item: 'filipino fried rice',
+        price: '12'
     },
 ]
 
     var menu = document.createElement('div');
-    menu.classList.add('menu-section')
+    menu.classList.add('menu-section');
+
+    var title = document.createElement('h2');
+    title.textContent = 'Lunch + Dinner';
+    menu.append(title);
 
     menuData.forEach(item => {
         var $item = document.createElement('div');
